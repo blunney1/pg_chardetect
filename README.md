@@ -2,7 +2,7 @@ pg_chardetect
 ==============
 A PostgreSQL extension to detect the character set of a string-based column and convert it to UTF8.  It returns 
 the character set name that can then be used to convert the string data to a different 
-character set, using the either the PostgreSQL convert(string bytea, ...) functions or the builtin convert_to_UTF8() db function.  This extension is primarily useful if your database encoding is SQL_ASCII.
+character set, using the either the PostgreSQL `convert(string bytea, ...)` functions or the builtin `convert_to_UTF8()` db function.  This extension is primarily useful if your database encoding is SQL_ASCII.
 
 The pg_chardetect extension uses software from ICU (http://site.icu-project.org/) and Pavel Stehule's PLToolBox2 (http://pgfoundry.org/projects/pstcollection/).
 
