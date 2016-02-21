@@ -62,7 +62,7 @@ To install the extension into a PostgreSQL database server run:
 
 ```bash
 sudo su - postgres
-createdb test
+createdb --encoding=SQL_ASCII --lc-collate=C --lc-ctype=C --template=template0 test
 psql test -f $(pg_config --sharedir)/contrib/pg_chardetect.sql
 ```
 
