@@ -82,7 +82,7 @@ psql test -c "select original_encoding, language, convert_this, convert_this::by
 ```
 The output of `char_set_detect(text)` is a `(encoding name, language, confidence level)` tuple.  The encoding name should be an IANA encoding name.  ICU reports the language, if it can be determined.  The confidence level ranges from 0 to 100, with 0 begin no confidence and 100 be absolute confidence.
 
-The output of convert_to_UTF8(text) is, of course, the input text converted to UTF8, if possible.  If not possible the original text is returned.  
+The output of `convert_to_UTF8(text)` is, of course, the input text converted to UTF8, if possible.  If not possible the original text is returned.  
 
 The query above should run without error.  The ICU library may or may not report NULL for the charset detection tuple, depending on whether or not it could detect the character set.
 
