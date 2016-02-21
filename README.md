@@ -86,7 +86,7 @@ The output of convert_to_UTF8(text) is, of course, the input text converted to U
 
 The query above should run without error.  The ICU library may or may not report NULL for the charset detection tuple, depending on whether or not it could detect the character set.
 
-Example usage of the pg_chardetect db functions can be found in test-data/pg_chardetect-test.sql, including a trigger function template for automatic conversion during inserts and updates.  The update technique *will* bloat your tables, so be sure to (auto)vacuum well and often!
+Example usage of the pg_chardetect db functions can be found in `test-data/pg_chardetect-test.sql`, including a trigger function template for automatic conversion during inserts and updates.  The update technique *will* bloat your tables, so be sure to (auto)vacuum well and often!
 
 
 ### More Tests!
